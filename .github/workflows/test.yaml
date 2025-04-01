@@ -15,7 +15,7 @@ jobs:
           python-version: '3.10'
 
       - name: Run all .py files
-        run: 
+        run: |
           for file in $(find . -name "*.py"); do
             echo "Running $file"
             python "$file"
